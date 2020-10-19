@@ -2,5 +2,10 @@
   "name": "express-demo",
   "version": "1.0.0",
   "main": "index.js",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1",
+    "global": "^4.4.0",
+    "node-dev": "^6.2.0"
+  }
 }
