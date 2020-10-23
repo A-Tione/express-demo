@@ -21,7 +21,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
 app.use('/xxx', (req, res, next)=> {
-  res.writeHead(200,{'Content-Type':'text/html;charset=utf-8'});
+  res.set('Content-Type', 'text/html;charset=utf-8');
   console.log(1);
   res.write('这是创建的xxx信息');
   next();
